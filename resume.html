@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vivek Sajwan — Résumé</title>
+  <style>
+    :root {
+      --ink: #18181b;
+      --muted: #52525b;
+      --line: #d4d4d8;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: #fafafa;
+      line-height: 1.5;
+    }
+    .sheet {
+      max-width: 720px;
+      margin: 2rem auto;
+      background: #fff;
+      padding: 3rem 3.5rem;
+      box-shadow: 0 1px 4px rgba(0,0,0,.08);
+    }
+    .todo-banner {
+      background: #fef9c3;
+      border: 1px solid #fde047;
+      color: #713f12;
+      font-size: .8rem;
+      padding: .6rem .9rem;
+      border-radius: 6px;
+      margin-bottom: 1.5rem;
+    }
+    header { text-align: center; margin-bottom: 1.75rem; }
+    h1 { font-size: 2rem; letter-spacing: -.02em; }
+    .headline {
+      font-size: .95rem;
+      color: var(--muted);
+      margin-top: .25rem;
+      text-transform: uppercase;
+      letter-spacing: .14em;
+      font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    }
+    .contact-line { font-size: .82rem; color: var(--muted); margin-top: .6rem; }
+    .contact-line span { white-space: nowrap; }
+    .contact-line span + span::before { content: "·"; margin: 0 .55em; color: var(--line); }
+    section { margin-top: 1.6rem; }
+    h2 {
+      font-size: .78rem;
+      text-transform: uppercase;
+      letter-spacing: .16em;
+      color: var(--muted);
+      border-bottom: 1px solid var(--line);
+      padding-bottom: .35rem;
+      margin-bottom: .8rem;
+    }
+    .role { margin-bottom: 1.05rem; }
+    .role-head { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; }
+    .role-title { font-weight: 700; font-size: .95rem; }
+    .role-org { font-size: .88rem; color: var(--muted); }
+    .role-dates {
+      font-family: ui-monospace, "SF Mono", Menlo, monospace;
+      font-size: .75rem;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+    ul { margin: .35rem 0 0 1.1rem; }
+    li { font-size: .87rem; margin-bottom: .28rem; }
+    .skills-grid { display: grid; grid-template-columns: 110px 1fr; gap: .45rem 1rem; font-size: .85rem; }
+    .skills-grid dt { font-weight: 600; }
+    .skills-grid dd { color: #3f3f46; }
+    .cert-line { font-size: .85rem; margin-bottom: .3rem; }
+    .cert-line em { color: var(--muted); font-style: normal; }
+    footer.note { margin-top: 2.5rem; font-size: .72rem; color: var(--muted); text-align: center; }
+
+    @media print {
+      body { background: #fff; }
+      .sheet { box-shadow: none; margin: 0; max-width: none; padding: 0; }
+      .todo-banner, footer.note { display: none !important; }
+      a { color: inherit; text-decoration: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="sheet">
+    <span class="todo-banner">
+      Print source for Vivek-Sajwan-Resume.pdf — edit here, then regenerate with headless Chrome or
+      <strong>File &rarr; Print &rarr; Save as PDF</strong>. This banner hides automatically in print.
+    </span>
+
+    <header>
+      <h1>Vivek Sajwan</h1>
+      <p class="headline">AI Product Manager · GenAI / RAG Platforms</p>
+      <p class="contact-line">
+        <span>Toronto, ON, Canada</span>
+        <span>viveksajwan95@gmail.com</span>
+        <span>linkedin.com/in/vivek-sajwan</span>
+        <span>github.com/viveksajwan95</span>
+      </p>
+    </header>
+
+    <section>
+      <h2>Summary</h2>
+      <ul>
+        <li>Technical Product Manager (AI/ML | GenAI/RAG) in healthcare and B2B SaaS — shipped a HIPAA/PHIPA-ready medical copilot with citations and human-in-the-loop review.</li>
+        <li>Built eval harnesses (golden sets, offline metrics, online canaries, regression gates in CI/CD) and hybrid retrieval (BM25 + vector search + re-ranking) so quality holds through model/prompt changes.</li>
+        <li>MBA + B.Tech Computer Science — ex-founder who scaled a marketplace to 120K+ users; led a 54-club, 5,300+ volunteer district to 87% growth.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+
+      <div class="role">
+        <div class="role-head">
+          <span><span class="role-title">Technical Product Manager — AI/ML &amp; GenAI/RAG</span><br /><span class="role-org">pareIT · California, US (Remote)</span></span>
+          <span class="role-dates">Oct 2023 – Present</span>
+        </div>
+        <ul>
+          <li>Shipped generative-AI features for clinical workflow automation (Claude, OpenAI), reducing manual processing time 48%.</li>
+          <li>Built the eval harness — golden sets, offline RAG metrics, online canaries, regression gates in CI/CD — keeping quality stable through model/prompt changes.</li>
+          <li>Launched closed-loop medical copilot (Pinecone-backed RAG with citations + feedback capture); hybrid retrieval with re-ranking improved answer grounding.</li>
+          <li>Established HIPAA-compliant AI governance pipeline (PHI redaction, audit trails, incident runbooks).</li>
+          <li>Scaled vectorised search/inference to 200% user growth at 99.97% uptime; defined North Star metrics in Mixpanel/Amplitude.</li>
+        </ul>
+      </div>
+
+      <div class="role">
+        <div class="role-head">
+          <span><span class="role-title">Product Manager</span><br /><span class="role-org">Adicator · Vancouver, BC</span></span>
+          <span class="role-dates">Apr 2023 – Jun 2023</span>
+        </div>
+        <ul>
+          <li>Crafted data-driven roadmap using RICE and story mapping; introduced CI/CD practices that reduced deployment times 40%.</li>
+          <li>Facilitated agile ceremonies that removed bottlenecks and accelerated feature delivery 35%.</li>
+        </ul>
+      </div>
+
+      <div class="role">
+        <div class="role-head">
+          <span><span class="role-title">Technical Product Manager</span><br /><span class="role-org">Deleezy · Vancouver, BC</span></span>
+          <span class="role-dates">Dec 2021 – Dec 2022</span>
+        </div>
+        <ul>
+          <li>Orchestrated B2B go-to-market achieving 65% activation within first 14 days of launch.</li>
+          <li>Cut post-release defects 52% via quality gates and pre-merge product checks; sustained 98% on-time delivery.</li>
+          <li>Redesigned onboarding and systemized a design system, lifting feature adoption 37% and task completion 23%.</li>
+        </ul>
+      </div>
+
+      <div class="role">
+        <div class="role-head">
+          <span><span class="role-title">Technical Product Manager</span><br /><span class="role-org">Paas Research · Delhi, India</span></span>
+          <span class="role-dates">Jul 2021 – Jul 2022</span>
+        </div>
+        <ul>
+          <li>Launched blockchain-based survey MVP; API gateway strategy accelerated partner onboarding 5× (15 partners in 3 months).</li>
+          <li>Ran pricing experiments and usage analytics informing v2 roadmap; crafted GTM assets lifting conversion 23%.</li>
+        </ul>
+      </div>
+
+      <div class="role">
+        <div class="role-head">
+          <span><span class="role-title">Software Engineer</span><br /><span class="role-org">Newgen Software · Noida, India</span></span>
+          <span class="role-dates">Aug 2018 – Jan 2021</span>
+        </div>
+        <ul>
+          <li>Built AngularJS UI screens and backend procedures for enterprise ECM clients; pre/post-production support and third-party integrations.</li>
+        </ul>
+      </div>
+
+      <div class="role">
+        <div class="role-head">
+          <span><span class="role-title">Founder &amp; Head of Product</span><br /><span class="role-org">CakeNinja App · Delhi NCR</span></span>
+          <span class="role-dates">Jan 2012 – Nov 2017</span>
+        </div>
+        <ul>
+          <li>Grew bakery-delivery marketplace to 120,000+ users through product-led viral acquisition loops.</li>
+          <li>Tiered subscriptions raised ARPU 27%; onboarded 138 bakery partners within seven months — built and operated in parallel with university.</li>
+        </ul>
+      </div>
+
+      <div class="role">
+        <div class="role-head">
+          <span><span class="role-title">District Secretary &amp; Deputy District Representative — Leadership</span><br /><span class="role-org">Rotaract District 3012</span></span>
+          <span class="role-dates">&nbsp;</span>
+        </div>
+        <ul>
+          <li>Operated portfolio of 54 clubs / 5,300+ volunteers; grew membership 87% and raised $62K in one year.</li>
+          <li>Delivered Project Pankh — 270 sanitary pad vending machines impacting ~54,000 students.</li>
+          <li>Honors: Paul Harris Fellow; Governor's Award for Best Rotaractor; District Torch Bearer.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <div class="role">
+        <div class="role-head">
+          <span class="role-title">EvalLake — AI quality intelligence platform</span>
+          <span class="role-dates">github.com/viveksajwan95/EvalLake</span>
+        </div>
+        <ul>
+          <li>Designed end-to-end as a PM: problem definition, personas, JTBD, success metrics, v1 scope.</li>
+          <li>Turns LLM evaluation results into structured data with regression detection, prompt-change lineage, and CI/CD release gates.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <dl class="skills-grid">
+        <dt>AI / LLM</dt><dd>LLM Evaluation · Generative AI · RAG Systems · Vector Search &amp; Re-ranking · Prompt Engineering · Golden Datasets · Regression Gates · Canary Testing · AI Guardrails · Hallucination Mitigation · HIPAA/PHIPA Privacy by Design · Responsible AI</dd>
+        <dt>Product</dt><dd>Strategy · Roadmapping · RICE · JTBD · North Star Metrics · User Research · A/B Testing · OKRs &amp; KPIs · Stakeholder Management · Go-to-Market</dd>
+        <dt>Data &amp; Tools</dt><dd>Mixpanel · Amplitude · Tableau · SQL · Pinecone · OpenSearch · LangChain · Claude/OpenAI APIs · Figma · Jira · CI/CD</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <p class="cert-line">MBA — <em>University Canada West, 2022 – 2023</em></p>
+      <p class="cert-line">Diploma, Business Administration &amp; Management — <em>Thompson Rivers University, 2021 – 2022</em></p>
+      <p class="cert-line">B.Tech, Computer Science — <em>GL Bajaj Institute of Technology and Management, 2014 – 2018</em></p>
+    </section>
+
+    <section>
+      <h2>Certifications</h2>
+      <p class="cert-line">AI For Business Specialization — <em>University of Pennsylvania (Coursera), 2024</em></p>
+      <p class="cert-line">Financial Accounting 099 — <em>University Canada West, 2022</em></p>
+      <p class="cert-line">Tableau Desktop Qualified Associate — <em>Tableau, 2022</em></p>
+      <p class="cert-line">Professional Program in Front-End Web Development — <em>Microsoft</em></p>
+    </section>
+
+    <footer class="note">viveksajwan95.github.io — print source for Vivek-Sajwan-Resume.pdf (already exported next to index.html). Edit here, then regenerate the PDF.</footer>
+  </div>
+</body>
+</html>
